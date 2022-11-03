@@ -22,6 +22,7 @@ body {
     background-color: #Ffffff;
     border-radius:10px ;
     margin: 170px 0;
+    position: relative;
 }
 
 .article__img {
@@ -36,33 +37,106 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 32px;
+    margin: 2rem 2rem;
 }
 
-.article__content > h2 {
+.article__content > a {
+    text-decoration: none;
     color: #48556A;
     font-weight: 700;
     line-height: 24px;
+    font-size: 16px;
 }
 
 .article__content > p {
+    margin-top: 12px;
     font-weight: 500;
+    line-height: 20px;
     color: #6E8098;
     font-size: 13px;
 }
 
 .article__content__author {
     display: flex;
-    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    margin: 20px 20px;
+    align-self: center;
+}
+
+.article__content__author > img {
+    width: 40px;
+    border-radius: 25px;
 }
 
 .article__content__author--info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    margin-left: 15px;
+}
+
+.article__content__author--info > h3 {
+    font-size: 13px;
+    color: #48556A;
+    font-weight: 700;
+}
+
+.article__content__author--info > p {
+    font-size: 13px;
+    color: #9DAEC2;
+    font-weight: 500;
+    
+}
+
+.article__content__author__share-btn {
+    border: none;
+    background-color:transparent;
+    margin-left:30px; 
+    cursor: pointer;
+
 }
 
 .article__content__share {
-    display: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 0;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    background-color: #48556A;
+    transition: all .5s ease;
+}
+
+.article__content__share--icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.article__content__share--icons > p {
+   color: #9DAEC2;
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 20px;
+   letter-spacing: 5px;
+
+}
+
+.article__content__share--icons > button {
+    background-color: transparent;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.show {
+    display: flex;
+    height: 64px;
+    opacity: 1;
 }
