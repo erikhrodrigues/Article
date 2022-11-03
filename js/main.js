@@ -7,9 +7,9 @@ let imgBtn = document.querySelector("#img-btn")
 btn.addEventListener("click", () => {
     share.classList.toggle("show");
     if(share.classList.contains("show")){
-        imgBtn.setAttribute('src', "../img/share-active.svg")
+        imgBtn.setAttribute('src', "img/share-active.svg")
     } else {
-        imgBtn.setAttribute('src', "../img/share.svg")
+        imgBtn.setAttribute('src', "img/share.svg")
     }
 });
 
