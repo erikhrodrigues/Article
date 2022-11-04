@@ -143,6 +143,8 @@ body {
     opacity: 1;
 }
 
+/* ----------- Responsive ------------ */
+
 @media screen and (min-width: 920px) {
     .article {
         flex-direction: row;
